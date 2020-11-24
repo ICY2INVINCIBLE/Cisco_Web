@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="description" content="Reflect Template" />
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+        <title>首页</title>
+        <link rel="stylesheet" href="../static/add/css/style_all.css" type="text/css" media="screen" />
+        
+        
+        
+        <!-- to choose another color scheme uncomment one of the foloowing stylesheets and wrap styl1.css into a comment -->
+        <link rel="stylesheet" href="../static/add/css/style8.css" type="text/css" media="screen" />
+        
+        <link rel="stylesheet" href="../static/add/css/jquery-ui.css" type="text/css" media="screen" />
+        
+        <link rel="stylesheet" href="../static/add/ueditor1_2_2_0-utf8-php/themes/default/ueditor.css" type="text/css" media="screen" />
+
+        <!--Internet Explorer Trancparency fix-->
+        <!--[if IE 6]>
+        <script src="../static/add/js/ie6pngfix.js"></script>
+        <script>
+          DD_belatedPNG.fix('#head, a, a span, img, .message p, .click_to_close, .ie6fix');
+        </script>
+        <![endif]-->
+        
+        <script type='text/javascript' src='../static/add/js/all-ck.js'></script>
+        <script type='text/javascript' src='../static/add/ueditor1_2_2_0-utf8-php/editor_config.js'></script>
+        <script type='text/javascript' src='../static/add/js/custom.js'></script>
+
+            <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <!--//meta tags ends here-->
+    <!--booststrap-->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <!--//booststrap end-->
+    <!-- font-awesome icons -->
+    <link href="../static/css/font-awesome.min.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!--stylesheets-->
+    <link href="../static/css/style.css" rel='stylesheet' type='text/css' media="all">
+    <!--//stylesheets-->
+    <link href="http://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+
+    <!--**access internet management**-->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Loding font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="../static/css/styles_login.css">
+
+    <title>Cisco</title>
+
+    </head>
+    
+    <body>
+        <div class="header-outs " id="header" style="background: url(../static/images/repeat_bg.jpg);background-repeat: repeat ;">
+        <div class="header-w3layouts">
+        <div class="container-fluid">
+          <nav>
+            <div id="logo">
+              <h1> <a href="link_network" style="color: black">Cisco</a></h1>
+            </div>
+            <label for="drop" class="toggle">Menu</label>
+            <input type="checkbox" id="drop" />
+            <ul class="menu mt-lg-3 mt-2">
+              <li><a href="link_network" style="color: black">首页</a></li>
+              <li><a href="link_network" style="color: black">服务</a></li>
+            </ul>
+            <div class="clearfix"></div>
+          </nav>
+          <div class="clearfix"></div>
+        </div>
+        </div>
+            <section class="price py-lg-4 py-md-3 py-sm-3 py-3" id="price">
+                <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+                </br>
+                </br>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 txt-rightside ">
+                        <h6 class="title-top-txt mb-2" >路径信息</h6>
+                        <h3  class="title clr" style="color: black">检测</h3>
+                    </div>
+                    <div class="title-wls-text col-lg-6 col-md-6 clr-para">
+                        <p class="" style="color: black">用户输入起始设备和结束设备名称即可查看两个设备之间路径的状态</p>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <!--end head-->
+           	<div style="padding-bottom: 50px;">
+                    <div id="main" style="padding-left: 350px">
+                        <div id="content">
+
+                            <div style="padding-top: 0px">
+                                <h2 style="font-size: 28px">路径检测</h2>
+                                </br></br>
+                                <div style="padding-left: 200px">
+                                <form id="addForm" method="post" >
+                                    <div class="form-group" style="width: 500px">
+                                        <input type="text" name="access_address" class="form-control" id="site_name" placeholder="起始设备名称">
+                                    </div>
+
+                                    <div class="form-group" style="width: 500px">
+                                        <input type="text" name="username" class="form-control" id="serial_number" placeholder="结束设备名称">
+                                    </div>
+                                    <!--
+                                    <div class="form-group" style="width: 500px">
+                                        <input type="text" name="password" class="form-control" id="dhcpServerIP" placeholder="DHCP服务器IP">
+                                    </div>
+
+                                    <div class="form-group" style="width: 500px">
+                                        <input type="text" name="access_address" class="form-control" id="domainName" placeholder="DNS服务器域名">
+                                    </div>
+
+                                    <div class="form-group" style="width: 500px">
+                                        <input type="text" name="username" class="form-control" id="dnsServerIP" placeholder="DNS服务器IP">
+                                    </div>
+
+                                    <div class="form-group" style="width: 500px">
+                                        <input type="text" name="password" class="form-control" id="syslogServerIP" placeholder="系统日志服务器IP">
+                                    </div>
+
+                                    <div class="form-group" style="width: 500px">
+                                        <input type="text" name="password" class="form-control" id="template_name" placeholder="设备需要配置的模板名称">
+                                    </div>
+                                    -->
+                                    </br>
+                                    <div style="padding-left: 150px" >
+                                        <ul>
+                                        <li><input id="log_in" type="submit"  class="btn btn-lg btn-block btn-success" style="width: 200px;background: #4682B4" value="测试"></li>
+                                        </ul>
+                                    </div>
+                                </form>
+                                    {% for k,v in user_dict.items() %}
+                                    </br>
+                                    <div>
+                                        <h4 style="font-weight: bolder;color: red" >{{ v.path }}&emsp; &emsp;{{v.tip}}</h4>
+                                    <img src="../static/images/path.png" height="150" width="500"/>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        <!--end content-->
+                    </div><!--end main-->
+            </div>
+
+
+        </div><!-- end top -->
+        </div>
+    </body>
+    
+</html>

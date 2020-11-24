@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="" />
+    <script>
+      addEventListener("load", function () {
+      	setTimeout(hideURLbar, 0);
+      }, false)
+
+      function hideURLbar() {
+      	window.scrollTo(0, 1);
+      }
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <!--//meta tags ends here-->
+    <!--booststrap-->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <!--//booststrap end-->
+    <!-- font-awesome icons -->
+    <link href="../static/css/font-awesome.min.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!--stylesheets-->
+    <link href="../static/css/style.css" rel='stylesheet' type='text/css' media="all">
+    <!--//stylesheets-->
+    <link href="http://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+
+    <!--**access internet management**-->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Loding font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="../static/css/styles_login.css">
+
+    <title>Cisco</title>
+</head>
+<body><div class="header-outs " id="header"  style="background: url(../static/images/bg7.jpg);background-repeat: repeat  ">
+        <div class="header-w3layouts">
+        <div class="container-fluid">
+          <nav>
+            <div id="logo">
+              <h1> <a href="link_network">Cisco</a></h1>
+            </div>
+            <label for="drop" class="toggle">Menu</label>
+            <input type="checkbox" id="drop" />
+            <ul class="menu mt-lg-3 mt-2">
+              <li><a href="link_network">首页</a></li>
+              <li><a href="link_network">服务</a></li>
+            </ul>
+            <div class="clearfix"></div>
+          </nav>
+          <div class="clearfix"></div>
+        </div>
+        </div>
+
+      <!-- //nav -->
+<!--price -->
+    <section class="price py-lg-4 py-md-3 py-sm-3 py-3" id="price">
+      <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+          </br>
+        </br>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 txt-rightside ">
+              <h6 class="title-top-txt mb-2">站点信息</h6>
+              <h3  class="title clr">查询</h3>
+            </div>
+            <div class="title-wls-text col-lg-6 col-md-6 clr-para">
+              <p class=""> 用户可以看到站点的全局名称，id和等级</p>
+            </div>
+          </div>
+      </div>
+    </section>
+
+        <div class="row" >
+{% for k,v in user_dict.items() %}
+            &emsp;&emsp;&emsp;&emsp;
+          <div class="col-lg-3 col-md-6 col-sm-6 pricing-grid" style="padding-bottom: 30px;">
+
+            <div class="w3ls-bottom grid-two" style="height: 300px;width: 300px;">
+
+              <div class="view-buttn mt-3">
+                <!--run the python -->
+                <a href="#contact"><img src="../static/images/site.png" width="50px" height="30px"></a>
+
+              </div>
+                 </br>
+              <div class="table-txt-grid">
+                <h4>{{ v.globalName}}</h4>
+              </div>
+              <div class="my-lg-4 my-3 price-w3layouts-table">
+                <h4> {{ v.level }}</h4>
+              </div>
+              <div class="my-lg-4 my-3 price-w3layouts-table">
+                <h4> {{ v.id }}</h4>
+              </div>
+            </div>
+          </div>
+{% endfor %}
+<!--
+          <div class="col-lg-3 col-md-6 col-sm-6 pricing-grid">
+            <div class="w3ls-bottom grid-two">
+              <div class="table-txt-grid">
+                <h4>PREMIUM</h4>
+              </div>
+              <div class="my-lg-4 my-3 price-w3layouts-table">
+                <h4> <span class="sup">$</span><span class="number-price">60</span> / month </h4>
+              </div>
+              <div class="price-list-txt">
+                <ul class="count">
+                  <li>Lorem ipsum </li>
+                  <li>Dolor sit </li>
+                  <li>Consectetuer</li>
+                  <li>Adipiscing</li>
+                  <li>Lorem ipsum </li>
+                </ul>
+              </div>
+              <div class="view-buttn mt-3">
+                <a href="#contact" class=" scroll">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 pricing-grid">
+            <div class="w3ls-bottom grid-two">
+              <div class="table-txt-grid">
+                <h4>PLATINUM</h4>
+              </div>
+              <div class="my-lg-4 my-3 price-w3layouts-table">
+                <h4> <span class="sup">$</span><span class="number-price">70</span> / month </h4>
+              </div>
+              <div class="price-list-txt">
+                <ul class="count">
+                  <li>Lorem ipsum </li>
+                  <li>Dolor sit </li>
+                  <li>Consectetuer</li>
+                  <li>Adipiscing</li>
+                  <li>Lorem ipsum </li>
+                </ul>
+              </div>
+              <div class="view-buttn mt-3">
+                <a href="#contact" class=" scroll">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 pricing-grid">
+            <div class="w3ls-bottom grid-two">
+              <div class="table-txt-grid">
+                <h4>SILVER</h4>
+              </div>
+              <div class="my-lg-4 my-3 price-w3layouts-table">
+                <h4> <span class="sup">$</span><span class="number-price">80</span> / month </h4>
+              </div>
+              <div class="price-list-txt">
+                <ul class="count">
+                  <li>Lorem ipsum </li>
+                  <li>Dolor sit </li>
+                  <li>Consectetuer</li>
+                  <li>Adipiscing</li>
+                  <li>Lorem ipsum </li>
+                </ul>
+              </div>
+              <div class="view-buttn mt-3">
+                <a href="#contact" class=" scroll">Book Now</a>
+              </div>
+            </div>
+          </div>-->
+        </div>
+      </div>
+
+    </section>
+    <!--//price-->
+    </div>
+    <!-- //banner -->
+
+</body>
+</html>

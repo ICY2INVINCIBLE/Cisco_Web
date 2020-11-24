@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="../static/images/logo.jpg">
+        <title>Cisco</title>
+        <!-- Bootstrap Core CSS -->
+        <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../static/plugins/prettyPhoto/css/prettyPhoto.css" rel="stylesheet">
+        <link href="../static/css/css2/animate.min.css" rel="stylesheet">
+        <link href="../static/css/css2/ui.totop.css" rel="stylesheet">
+        <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+        <link href="../static/css/css2/extralayers.css" rel="stylesheet">
+        <link href="../static/plugins/rs-plugin/css/settings.css" rel="stylesheet">
+        <!-- Font Awesome  -->
+        <link href="../static/css/css2/font-awesome.min.css" rel="stylesheet">
+        <!-- Custom Stylesheet For This Template -->
+        <link href="../static/css/css2/stylesheet.css" rel="stylesheet">
+        <link href="../static/css/css2/skins.css" rel="stylesheet">
+        <!-- Google Fonts -->
+        <link href="http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,600,500,300,200,100" rel="stylesheet" type="text/css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="../static/js2/html5shiv.min.js"></script>
+        <script src="../static/js2/respond.min.js"></script>
+        <![endif]-->
+
+            <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <!--//meta tags ends here-->
+    <!--booststrap-->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <!--//booststrap end-->
+    <!-- font-awesome icons -->
+    <link href="../static/css/font-awesome.min.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!--stylesheets-->
+    <link href="../static/css/style.css" rel='stylesheet' type='text/css' media="all">
+    <!--//stylesheets-->
+    <link href="http://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+
+    <!--**access internet management**-->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Loding font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="../static/css/styles_login.css">
+
+    </head>
+    <body>
+
+    <div class="header-outs " id="header" style="background: url(../static/images/bg7.jpg); height:1800px">
+        <div class="header-w3layouts">
+        <div class="container-fluid">
+          <nav>
+            <div id="logo">
+              <h1> <a href="link_network">Cisco</a></h1>
+            </div>
+            <label for="drop" class="toggle">Menu</label>
+            <input type="checkbox" id="drop" />
+            <ul class="menu mt-lg-3 mt-2">
+              <li ><a href="link_network">首页</a></li>
+              <li><a href="link_network">服务</a></li>
+            </ul>
+            <div class="clearfix"></div>
+          </nav>
+          <div class="clearfix"></div>
+        </div>
+        </div>
+
+        </br></br>
+        <section class="price py-lg-4 py-md-3 py-sm-3 py-3" id="price" >
+            <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 txt-rightside ">
+                            <h6 class="title-top-txt mb-2">网络设备</h6>
+                            <h3  class="title clr">诊断</h3>
+                        </div>
+                        <div class="title-wls-text col-lg-6 col-md-6 clr-para">
+                            <p class="">用户可以查看总设备数量，无线连接设备的数量等设备诊断信息</p>
+                        </div>
+                    </div>
+
+            </div>
+        </section>
+
+
+        <div id="page" class="hfeed site">
+            <!-- /#header-search-box -->
+            <div id="main" class="wrapper">
+                <div id="primary" class="site-comtent">
+
+                    <div class="container">
+                        <section id="services" class="section">
+                            <div class="row">
+                                {% for k,v in user_dict.items() %}
+                                <div class="col-xs-12 col-sm-4" >
+                                    <a  class="sbox" >
+                                        <div class="sbox-inner" style="background:white">
+                                            <span class="sbox-icon" ><img src={{v.img}} width="30px" height="30px"></span>
+                                            <h5 class="sbox-title">{{v.name}}</h5>
+                                            <p>{{v.results}}</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                {% endfor %}
+                                <!--
+                                <div class="col-xs-12 col-sm-4">
+                                    <a href="" class="sbox">
+                                        <div class="sbox-inner">
+                                            <span class="sbox-icon"><i class="fa fa-code"></i></span>
+                                            <h5 class="sbox-title">Easy & Clean Code</h5>
+                                            <p>Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-4">
+                                    <a href="" class="sbox">
+                                        <div class="sbox-inner">
+                                            <span class="sbox-icon"><i class="fa fa-paper-plane"></i></span>
+                                            <h5 class="sbox-title">24/7 Customer Support</h5>
+                                            <p>Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.</p>
+                                        </div>
+                                    </a>
+                                </div>-->
+                            </div>
+                            <!-- /.row -->
+                        </section>
+
+
+                        <!-- /#our-clients -->
+                    </div>
+                </div>
+                <!-- /.site-comtent -->
+            </div>
+            <!-- /#main -->
+
+        </div>
+    </div>
+        <!-- Bootstrap JS & Others JavaScript Plugins -->
+        <!-- Placed At The End Of The Document So Page Loads Faster -->
+        <script src="../static/js2/jquery-2.1.4.min.js"></script>
+        <script src="../static/js2/jquery-migrate-1.2.1.min.js"></script>
+        <script src="../static/js2/bootstrap.min.js"></script>
+        <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+        <script src="../static/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+        <script src="../static/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="../static/plugins/prettyPhoto/js/jquery.prettyPhoto.js"></script>
+        <script src="../static/js2/jquery.carouFredSel-6.2.1-packed.js"></script>
+        <script src="../static/js2/jflickrfeed.min.js"></script>
+        <script src="../static/js2/easing.js"></script>
+        <script src="../static/js2/jquery.ui.totop.min.js"></script>
+        <script src="../static/js2/isotope.pkgd.min.js"></script>
+        <script src="../static/js2/jquery.fitvids.js"></script>
+        <!-- Custom Script For This Template -->
+        <script src="../static/js2/script.js"></script>
+                <script src="../static/plugins/jquery-3.3.1.min.js"></script>
+    <script src="../static/plugins/popper.min.js"></script>
+    <script src="../static/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+    <script src="../static/js/demo/style-switcher.js"></script>
+    </body>
+</html>
+

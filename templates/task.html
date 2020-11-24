@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Cisco</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- FontAwesome JS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js"></script>
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="../static/css/css/theme-1.css">
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <!--//meta tags ends here-->
+    <!--booststrap-->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <!--//booststrap end-->
+    <!-- font-awesome icons -->
+    <link href="../static/css/font-awesome.min.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!--stylesheets-->
+    <link href="../static/css/style.css" rel='stylesheet' type='text/css' media="all">
+    <!--//stylesheets-->
+    <link href="http://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+	<!--card-->
+	<link href="../static/css/material.indigo-pink.min.css" rel="stylesheet">
+    <!--**access internet management**-->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Loding font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="../static/css/styles_login.css">
+
+
+</head> 
+
+<body>
+<div class="header-outs " id="header" style="background: url(../static/images/bg9.jpg);height: 1500px">
+<div class="header-w3layouts">
+        <div class="container-fluid">
+          <nav>
+            <div id="logo">
+              <h1> <a href="link_network">Cisco</a></h1>
+            </div>
+            <label for="drop" class="toggle">Menu</label>
+            <input type="checkbox" id="drop" />
+            <ul class="menu mt-lg-3 mt-2">
+              <li ><a href="link_network">首页</a></li>
+              <li><a href="link_network">服务</a></li>
+            </ul>
+            <div class="clearfix"></div>
+          </nav>
+          <div class="clearfix"></div>
+        </div>
+
+</div>
+
+    <section class="price py-lg-4 py-md-3 py-sm-3 py-3" id="price" >
+      <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+          </br>
+        </br>
+        <div >
+          <div class="row">
+            <div class="col-lg-6 col-md-6 txt-rightside ">
+              <h6 class="title-top-txt mb-2">网络任务</h6>
+              <h3  class="title clr">查询</h3>
+            </div>
+            <div class="title-wls-text col-lg-6 col-md-6 clr-para">
+              <p class=""> 用户可以看到网络任务的进程，id，开始时间，设备类型已经是否有误</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- //nav -->
+	{% for k,v in user_dict.items() %}
+    <!--card-->
+	  <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone  mdl-shadow--4dp" style="margin-left: 180px; margin-top: 50px;height: 230px" >
+
+    <div class="mdl-card__supporting-text" style="margin-left: 120px; margin-bottom: 8px" >
+		<div class="item mb-5">
+				    <div class="media">
+					    <img width="200px" height="90px" style="margin-left: 0px" class="mr-3 img-fluid post-thumb d-none d-md-flex" src="../static/images/blog/blog-post-thumb-1.jpg" alt="image">
+					    &emsp;
+						<div class="media-body">
+						    <h3 class="title mb-1" style="font-weight: bold; color: #00cc66;font-size: 27px ">{{ v.Progress }}</h3>
+						    &nbsp;
+							<div class="meta mb-1" style="color: black"><span class="date" style="font-weight: bold;color: black;font-size: 15px">Root Id:&emsp;</span>{{ v.Root_Id }}></div>
+						    &nbsp;
+							<div class="meta mb-1" style="color: black"><span class="date" style="font-weight: bold;color: black;font-size: 15px">Version:&emsp;</span>{{ v.Start_Time }}></div>
+							&nbsp;
+							<div class="meta mb-1" style="color: black"><span class="date" style="font-weight: bold;color: black;font-size: 15px">Service Type:&emsp;</span>{{ v.Service_Type }}></div>
+							&nbsp;
+							<div class="meta mb-1" style="color: black"><span class="date" style="font-weight: bold;color: black;font-size: 15px">Is Error:&emsp;</span>{{ v.Is_Error }}></div>
+					    </div><!--//media-body-->
+				    </div><!--//media-->
+			    </div><!--//item-->
+    </div>
+  </div>
+	<!--card_end-->
+
+	{% endfor %}
+</div>
+	<!--
+    <div class="main-wrapper">
+	    <section class="blog-list px-3 py-5 p-md-5">
+		    <div class="container">
+				{% for k,v in user_dict.items() %}
+			    <div class="item mb-5">
+				    <div class="media">
+					    <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="../static/images/blog/blog-post-thumb-1.jpg" alt="image">
+					    <div class="media-body">
+						    <h3 class="title mb-1" style="font-weight: bold; color: #00cc66">{{ v.Progress }}</h3>
+						    <div class="meta mb-1" style="color: black"><span class="date" style="font-weight: bold;color: black">Root Id:&emsp;</span>{{ v.Root_Id }}></div>
+						    <div class="meta mb-1"style="color: black"><span class="date" style="font-weight: bold;color: black">Start Time:&emsp;</span>{{ v.Start_Time }}></div>
+							<div class="meta mb-1"style="color: black"><span class="date" style="font-weight: bold;color: black">Service Type:&emsp;</span>{{ v.Service_Type }}></div>
+							<div class="meta mb-1"style="color: black"><span class="date" style="font-weight: bold;color: black">Is Error:&emsp;</span>{{ v.Is_Error }}></div>
+					    </div>
+				    </div>
+			    </div>
+				{% endfor %}
+		    </div>
+	    </section>
+	    
+	    <footer class="footer text-center py-2 theme-bg-dark">
+		   
+	       <small class="copyright">Copyright &copy; 2020.Company name All rights reserved.</small>
+		   
+	    </footer>
+    
+    </div>-->
+
+
+       
+    <!-- Javascript -->          
+    <script src="../static/plugins/jquery-3.3.1.min.js"></script>
+    <script src="../static/plugins/popper.min.js"></script>
+    <script src="../static/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+    <script src="../static/js/demo/style-switcher.js"></script>
+    
+
+</body>
+</html> 
+
